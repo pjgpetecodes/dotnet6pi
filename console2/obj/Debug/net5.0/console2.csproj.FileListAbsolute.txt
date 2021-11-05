@@ -1,0 +1,13 @@
+C:\dotnet6pi\console2\bin\Debug\net5.0\console2.exe
+C:\dotnet6pi\console2\bin\Debug\net5.0\console2.deps.json
+C:\dotnet6pi\console2\bin\Debug\net5.0\console2.runtimeconfig.json
+C:\dotnet6pi\console2\bin\Debug\net5.0\console2.runtimeconfig.dev.json
+C:\dotnet6pi\console2\bin\Debug\net5.0\console2.dll
+C:\dotnet6pi\console2\bin\Debug\net5.0\console2.pdb
+C:\dotnet6pi\console2\obj\Debug\net5.0\console2.csprojAssemblyReference.cache
+C:\dotnet6pi\console2\obj\Debug\net5.0\console2.AssemblyInfoInputs.cache
+C:\dotnet6pi\console2\obj\Debug\net5.0\console2.AssemblyInfo.cs
+C:\dotnet6pi\console2\obj\Debug\net5.0\console2.csproj.CoreCompileInputs.cache
+C:\dotnet6pi\console2\obj\Debug\net5.0\console2.dll
+C:\dotnet6pi\console2\obj\Debug\net5.0\console2.pdb
+C:\dotnet6pi\console2\obj\Debug\net5.0\console2.genruntimeconfig.cache
