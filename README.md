@@ -12,9 +12,9 @@ https://www.petecodes.co.uk/contact/
 
 Pete Gallagher / Pete Codes / PJG Creations 2021
 
-# .Net 5 Installation on a Raspberry Pi
+# .Net 6 Installation on a Raspberry Pi
 
-You can install Dot Net 5 on the Raspberry Pi in one command by executing;
+You can install Dot Net 6 on the Raspberry Pi in one command by executing;
 
 ```
 wget -O - https://raw.githubusercontent.com/pjgpetecodes/dotnet6pi/master/install.sh | sudo bash
@@ -22,7 +22,7 @@ wget -O - https://raw.githubusercontent.com/pjgpetecodes/dotnet6pi/master/instal
 
 # Local Install Script
 
-If you've cloned this repo, you can install Dot Net 5 by running the following in the root of the repo;
+If you've cloned this repo, you can install Dot Net 6 by running the following in the root of the repo;
 
 ```
 sudo chmod +x install.sh
@@ -34,7 +34,7 @@ sudo ./install.sh
 
 Download the latest version of the .NET framework for your system from here;
 
-https://dotnet.microsoft.com/download/dotnet/5.0
+https://dotnet.microsoft.com/download/dotnet/6.0
 
 # Remote Deployment and Debugging
 
