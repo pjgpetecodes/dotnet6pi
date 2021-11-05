@@ -4,7 +4,7 @@ This is the source code to accompany my talk on Microsoft .Net 6 with the Raspbe
 
 Talk details, slides and a blog are incoming!
 
-Tested on a Raspberry Pi 3B+ and a Raspberry Pi 4
+Tested on a Raspberry Pi 3B+ / Raspberry Pi Zero 2W and a Raspberry Pi 4
 
 Any Queries, contact me at;
 
