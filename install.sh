@@ -166,7 +166,7 @@ echo -e "\e[0m"
 
 cd ~
 
-wget -O /home/pi/dotnetdebug.sh https://raw.githubusercontent.com/pjgpetecodes/dotnet5pi/master/dotnetdebug.sh
+wget -O /home/pi/dotnetdebug.sh https://raw.githubusercontent.com/pjgpetecodes/dotnet6pi/master/dotnetdebug.sh
 chmod +x /home/pi/dotnetdebug.sh 
 
 echo -e "\e[0m"
