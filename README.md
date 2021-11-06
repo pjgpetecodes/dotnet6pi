@@ -1,6 +1,6 @@
 # Dot Net 6 with the Raspberry Pi
 
-This is the source code to accompany my talk on Microsoft .Net 6 with the Raspberry Pi.
+This is the source code to accompany my talk on Microsoft .NET 6 with the Raspberry Pi.
 
 Talk details, slides and a blog are incoming!
 
@@ -12,7 +12,13 @@ https://www.petecodes.co.uk/contact/
 
 Pete Gallagher / Pete Codes / PJG Creations 2021
 
-# .Net 6 Installation on a Raspberry Pi
+# Blog Post
+
+You can read the accompanying blog post for this repository here;
+
+[Install and use .NET 6 with the Raspberry Pi](http://bit.ly/dotnet6pi)
+
+# .NET 6 Installation on a Raspberry Pi
 
 You can install Dot Net 6 on the Raspberry Pi in one command by executing;
 
