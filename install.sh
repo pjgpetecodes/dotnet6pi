@@ -19,7 +19,7 @@ dotnetver=$1
 
 if [[ "$dotnetver" = "" ]]; then
   versionspage=$(wget -qO - https://dotnet.microsoft.com/download/dotnet)
-  matchrecommended='\.NET ([^ ]*) \(recommended\)'
+  matchrecommended='\.NET ([^]*) \(recommended\)'
 
   [[ $versionspage =~ $matchrecommended ]]
   dotnetver=${BASH_REMATCH[1]}
