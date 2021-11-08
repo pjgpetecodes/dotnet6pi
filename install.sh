@@ -15,15 +15,20 @@ echo -e "\e[1m     Fetching Latest .NET Versions"
 echo -e "\e[1m----------------------------------------"
 echo -e "\e[0m"
 
-dotnetver=$1
+dotnetver=6.0
 
-if [[ "$dotnetver" = "" ]]; then
-  versionspage=$(wget -qO - https://dotnet.microsoft.com/download/dotnet)
-  matchrecommended='\.NET ([^]*) \(recommended\)'
+#
+# We can add this back in when this release becomes recommended
+#
+#dotnetver=$1
+#
+#if [[ "$dotnetver" = "" ]]; then
+#  versionspage=$(wget -qO - https://dotnet.microsoft.com/download/dotnet)
+#  matchrecommended='\.NET ([^]*) \(recommended\)'
 
-  [[ $versionspage =~ $matchrecommended ]]
-  dotnetver=${BASH_REMATCH[1]}
-fi
+#  [[ $versionspage =~ $matchrecommended ]]
+#  dotnetver=${BASH_REMATCH[1]}
+#fi
 
 sdkfile=/tmp/dotnetsdk.tar.gz
 aspnetfile=/tmp/aspnetcore.tar.gz
