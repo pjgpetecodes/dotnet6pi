@@ -6,7 +6,7 @@ echo -e "\e[1m----------------------------------------"
 echo ""
 echo -e "\e[1mPete Codes / PJG Creations 2021"
 echo ""
-echo -e "Latest update 05/11/2021"
+echo -e "Latest update 08/11/2021"
 echo ""
 
 echo -e "\e[0m"
@@ -15,7 +15,15 @@ echo -e "\e[1m     Fetching Latest .NET Versions"
 echo -e "\e[1m----------------------------------------"
 echo -e "\e[0m"
 
-dotnetver='6.0'
+dotnetver=$1
+
+if [[ "$dotnetver" = "" ]]; then
+  versionspage=$(wget -qO - https://dotnet.microsoft.com/download/dotnet)
+  matchrecommended='\.NET ([^ ]*) \(recommended\)'
+
+  [[ $versionspage =~ $matchrecommended ]]
+  dotnetver=${BASH_REMATCH[1]}
+fi
 
 sdkfile=/tmp/dotnetsdk.tar.gz
 aspnetfile=/tmp/aspnetcore.tar.gz
@@ -180,10 +188,11 @@ dotnet --info
 echo -e "\e[0m"
 echo -e "\e[1m----------------------------------------"
 echo -e "\e[1m              ALL DONE!"
-echo -e "\e[0mGo ahead and run \e[1mdotnet new console \e[0min a new directory!"
-echo ""
 echo ""
 echo -e "\e[1mNote: It's highly recommended that you perform a reboot at this point!"
+echo ""
+echo -e "\e[0mGo ahead and run \e[1mdotnet new console \e[0min a new directory!"
+echo ""
 echo ""
 echo ""
 echo -e "\e[0mLet me know how you get on by tweeting me at \e[1;5m@pete_codes\e[0m"
