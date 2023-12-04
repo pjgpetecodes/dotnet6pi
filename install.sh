@@ -6,8 +6,17 @@ echo -e "\e[1m----------------------------------------"
 echo ""
 echo -e "\e[1mPete Codes / PJG Creations 2021"
 echo ""
-echo -e "Latest update 08/11/2021"
+echo -e "Latest update 04/12/2023"
 echo ""
+
+echo -e "\e[0m"
+echo -e "\e[1m----------------------------------------"
+echo -e "\e[1m Installing .NET for the following user"
+echo -e "\e[1m----------------------------------------"
+echo -e "\e[0m"
+
+username=$(logname)
+echo -e "\e[1m$username\e[0m"
 
 echo -e "\e[0m"
 echo -e "\e[1m----------------------------------------"
@@ -67,6 +76,12 @@ echo -e "\e[1m----------------------------------------"
 echo -e "\e[0m"
 echo "- .NET SDK $dotnetver"
 echo "- ASP.NET Runtime $dotnetver"
+echo ""
+echo -e "\e[1m----------------------------------------"
+echo -e "\e[0m"
+echo "For the following user:"
+echo ""
+echo -e "\e[1m$username\e[0m"
 echo ""
 echo -e "\e[1m----------------------------------------"
 echo -e "\e[0m"
@@ -164,11 +179,11 @@ echo -e "\e[1m    Make Link Permanent"
 echo -e "\e[1m----------------------------------------"
 echo -e "\e[0m"
 
-if grep -q 'export DOTNET_ROOT=' /home/pi/.bashrc;  then
+if grep -q 'export DOTNET_ROOT=' /home/$username/.bashrc;  then
   echo 'Already added link to .bashrc'
 else
   echo 'Adding Link to .bashrc'
-  echo 'export DOTNET_ROOT=/opt/dotnet' >> /home/pi/.bashrc
+  echo 'export DOTNET_ROOT=/opt/dotnet' >> /home/$username/.bashrc
 fi
 
 echo -e "\e[0m"
@@ -179,8 +194,8 @@ echo -e "\e[0m"
 
 cd ~
 
-wget -O /home/pi/dotnetdebug.sh https://raw.githubusercontent.com/pjgpetecodes/dotnet6pi/master/dotnetdebug.sh
-chmod +x /home/pi/dotnetdebug.sh 
+wget -O /home/$username/dotnetdebug.sh https://raw.githubusercontent.com/pjgpetecodes/dotnet6pi/master/dotnetdebug.sh
+chmod +x /home/$username/dotnetdebug.sh 
 
 echo -e "\e[0m"
 echo -e "\e[1m----------------------------------------"
